@@ -11,20 +11,20 @@
 #pragma resource "*.dfm"
 TForm2 *Form2;
 
-int pkt1,pkt2,remis; //zmienne do przechowywania punktów za wygran¹ rozgrywkê
+int pkt1,pkt2,remis; //zmienne do przechowywania punktÃ³w za wygrana rozgrywke
 int pom=0; 
-//pomocnicza, która zapamiêtuje, kto rozpoczyna³ rogrywkê.
-//Jej wartoœc jest zmieniana po ka¿dej rozgrywce
+//pomocnicza, ktÃ³ra zapamietuje, kto rozpoczynal rogrywke.
+//Jej wartosc jest zmieniana po kazdej rozgrywce
 
 int x=0,y=0,z=0;
 
 char p1,p2,p3,p4,p5,p6,p7,p8,p9;
 //nr pola w grze (ich zawartosc n=nic,o=kolko,x=krzyzyk)
 
-char kto; //przechowuje informacjê,kto ma wykonaæ ruch
+char kto; //przechowuje informacje,kto ma wykonal ruch
 
 //---------------------------------------------------------------------------
-// funkcja dezaktywuje wszystkie pola po zakoñczeniu rozgrywki
+// funkcja dezaktywuje wszystkie pola po zakonczeniu rozgrywki
 
 void blokuj()
 {
@@ -41,7 +41,7 @@ Form2->Image9->Enabled=false;
 
 }
 //---------------------------------------------------------------------------
-//funkcja sprawdza, czy nie nast¹pi³a wygrana
+//funkcja sprawdza, czy nie nastapila wygrana
 
 void sprawdz()
 {
@@ -83,7 +83,7 @@ void sprawdz()
 
 }
 //---------------------------------------------------------------------------
-// funkcja, wyœwietla zegar z rzeczywistm czasem
+// funkcja, wyswietla zegar z rzeczywistm czasem
 
 void zegar()
 { 
@@ -113,7 +113,7 @@ void __fastcall TForm2::FormCreate(TObject *Sender)
 Label1->Caption=Form1->gracz1;
 Label3->Caption=Form1->gracz2;
 
-Image1->Picture->LoadFromFile("img/nic.bmp");//³adowanie z plików wzoru planszy
+Image1->Picture->LoadFromFile("img/nic.bmp");//ladowanie z plikow wzoru planszy
 Image2->Picture->LoadFromFile("img/nic.bmp");
 Image3->Picture->LoadFromFile("img/nic.bmp");
 Image4->Picture->LoadFromFile("img/nic.bmp");
@@ -123,11 +123,11 @@ Image7->Picture->LoadFromFile("img/nic.bmp");
 Image8->Picture->LoadFromFile("img/nic.bmp");
 Image9->Picture->LoadFromFile("img/nic.bmp");
 
-   p1='n'; p2='n'; p3='n';     //ustawienie wartoœci pól na n,czyli nic
+   p1='n'; p2='n'; p3='n';     //ustawienie wartosci pol na n,czyli nic
    p4='n'; p5='n'; p6='n';
    p7='n'; p8='n'; p9='n';
 
-   Image1->Enabled=true;     //ustawienie pól jako aktywne
+   Image1->Enabled=true;     //ustawienie pol jako aktywne
    Image2->Enabled=true;
    Image3->Enabled=true;
    Image4->Enabled=true;
@@ -138,12 +138,12 @@ Image9->Picture->LoadFromFile("img/nic.bmp");
    Image9->Enabled=true;
 
 
-   if(pom==0)   //sprawdza, kto ma rozpocz¹æ rozgrywkê
+   if(pom==0)   //sprawdza, kto ma rozpoczal rozgrywke
    {
-   //³aduje obraz,który informuje czyj jest ruch
+   //laduje obraz,ktÃ³ry informuje czyj jest ruch
    Tura->Picture->LoadFromFile("img/so.bmp");  
-   kto='o';   //ustawia wartoœæ czyj jest ruch
-   //zmieniamy wartoœæ pom,¿eby w nastêpnej rozgrywce rozpoczyna³ drugi gracz
+   kto='o';   //ustawia wartoÅ“Ã¦ czyj jest ruch
+   //zmieniamy wartoÅ“Ã¦ pom,zeby w nastÃªpnej rozgrywce rozpoczynal drugi gracz
    pom=1;
    }
 
@@ -164,8 +164,8 @@ if(p1=='n')                          //sprawdza,czy pole jest puste
 {
       if(kto=='o')                  //sprawdza, czyj jest ruch
       {
-         Image1->Picture->LoadFromFile("img/o.bmp");    //³aduje obraz na pole
-         p1='o';        //ustawia wartoœæ pola,na gracza, który to pole klikn¹³
+         Image1->Picture->LoadFromFile("img/o.bmp");    //laduje obraz na pole
+         p1='o';        //ustawia wartosc pola,na gracza, ktÃ³ry to pole kliknal
          kto='x';       //zmienia kolej ruchu na drugiego gracza
          Tura->Picture->LoadFromFile("img/sx.bmp") ;
 
@@ -239,7 +239,7 @@ if(p3=='n')
       }
 
 }           Image3->Enabled=false;  //ustawia pole jako nieaktywne
-           sprawdz();               //sprawdza, czy nie nast¹pi³a wygrana
+           sprawdz();               //sprawdza, czy nie nastapila wygrana
 }
 //---------------------------------------------------------------------------
 

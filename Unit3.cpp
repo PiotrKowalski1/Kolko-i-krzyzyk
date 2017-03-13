@@ -14,12 +14,12 @@ int pkt1,pkt2,remis;
 int pom=0;
 int x=0,y=0,z=0;
 char p1,p2,p3,p4,p5,p6,p7,p8,p9;
-//nr pola w grze (ich zawartosc n=nic,w=werka,x=bobi)
+//nr pola w grze (ich zawartosc n=nic,o=kolko,x=krzyzyk)
 char kto;
-int tab[9];  //tablica przechowuj¹ca numery pól zaznaczonych
-int nr;      //zmienna przechowuj¹ca informacjê z numerem zaznaczonego pola 
-int k;       //zmienna przechowuj¹ca informacjê,czy nast¹pi³a wygrana
-int numer;   //zmienna przechowuj¹ca informacjê z numerem zaznaczonego pola 
+int tab[9];  //tablica przechowujaca numery pÃ³l zaznaczonych
+int nr;      //zmienna przechowujaca informacje z numerem zaznaczonego pola 
+int k;       //zmienna przechowujaca informacje,czy nastapila wygrana
+int numer;   //zmienna przechowujaca informacje z numerem zaznaczonego pola 
 
 
 
@@ -41,7 +41,7 @@ Form3->Image9->Enabled=false;
 }
 
 //---------------------------------------------------------------------------
-//funkcja, która sprawdza czy nie nast¹pi³a wygrana
+//funkcja, ktÃ³ra sprawdza czy nie nastÄ…pila wygrana
 
 void kontrola()
 {
@@ -84,7 +84,7 @@ void kontrola()
 
   }
 //---------------------------------------------------------------------------
-//funkcja imituj¹ca ruchy komputera
+//funkcja imitujaca ruchy komputera
 
 void komputer(int nr)
 {
@@ -223,8 +223,8 @@ Form1->Close();
 void __fastcall TForm3::FormCreate(TObject *Sender)
 {
 for(int i=1;i<10;i++)
-      tab[i]=0;            //tablicê wype³niamy zerami
-      k=0;                 //zerujemy k po ka¿dej rozgrywce
+      tab[i]=0;            //tablice wypelniamy zerami
+      k=0;                 //zerujemy k po kazdej rozgrywce
 
 
 Label10->Visible=false;

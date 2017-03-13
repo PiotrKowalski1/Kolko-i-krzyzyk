@@ -14,20 +14,20 @@
 class TForm2 : public TForm
 {
 __published:	// IDE-managed Components
-        TLabel *Label1;  //napis wyœwietlaj¹cy nazwê gracza 1
+        TLabel *Label1;  //napis wyswietlajacy nazwe gracza 1
         TLabel *Label2;  //napis "remis"
-        TLabel *Label3;  //napis wyœwietlaj¹cy nazwê gracza 2
-        TLabel *Label4;  //napis zegara,pokazuj¹cy czas
-        TLabel *Label5;  //napis wyœwietlaj¹cy iloœæ punktów gracza 1
-        TLabel *Label6;  //napis wyœwietlaj¹cy iloœæ remisów
-        TLabel *Label7;  //napis wyœwietlaj¹cy iloœæ punktów gracza 2
+        TLabel *Label3;  //napis wyÅ“wietlajacy nazwe gracza 2
+        TLabel *Label4;  //napis zegara,pokazujacy czas
+        TLabel *Label5;  //napis wyswietlajacy ilosc punktÃ³w gracza 1
+        TLabel *Label6;  //napis wyswietlajacy ilosc remisÃ³w
+        TLabel *Label7;  //napis wyswietlajacy ilosc punktÃ³w gracza 2
         TLabel *Label9;  //napis "tura gracza",nad obrazem tura
-        TLabel *Label10; //napis wyœwietlaj¹cy nazwê gracza, który wygra³
+        TLabel *Label10; //napis wyÅ“wietlajÂ¹cy nazwÃª gracza, ktÃ³ry wygral
         
-        TLabel *Label8;  //przycisk pozwalaj¹cy rozpocz¹æ now¹ rozgrywkê
-        TLabel *Label11; //przycisk pozwalaj¹cy powrót do menu
+        TLabel *Label8;  //przycisk pozwalajacy rozpoczac nowa rozgrywke
+        TLabel *Label11; //przycisk pozwalajacy na powrÃ³t do menu
 
-        TTimer *Timer1;  //timer s³u¿¹cy do odmierzania czasu
+        TTimer *Timer1;  //timer sluzacy do odmierzania czasu
         
         TImage *Image1;  //obraz pola w grze
         TImage *Image2;  //obraz pola w grze
@@ -39,17 +39,17 @@ __published:	// IDE-managed Components
         TImage *Image8;  //obraz pola w grze
         TImage *Image9;  //obraz pola w grze
         
-        TImage *Tura;    //obraz, przedstawiaj¹cy czyj jest ruch
+        TImage *Tura;    //obraz, przedstawiajacy czyj jest ruch
         
        
        
-        //funcja zamykaj¹ca program
+        //funcja zamykajaca program
         void __fastcall FormClose(TObject *Sender, TCloseAction &Action);
-        //funkcja tworz¹ca planszê
+        //funkcja tworzaca plansze
         void __fastcall FormCreate(TObject *Sender);
-        //funkcja odmierzaj¹ca czas
+        //funkcja odmierzajaca czas
         void __fastcall Timer1Timer(TObject *Sender);
-        //funkcje wstawiaj¹ce obraz kó³ka i krzy¿yka po klikniêciu w pole
+        //funkcje wstawiajace obraz kÃ³lka i krzyzyka po klikniÃªciu w pole
         void __fastcall Image1Click(TObject *Sender); 
         void __fastcall Image2Click(TObject *Sender);
         void __fastcall Image3Click(TObject *Sender); 
@@ -59,10 +59,10 @@ __published:	// IDE-managed Components
         void __fastcall Image7Click(TObject *Sender);
         void __fastcall Image8Click(TObject *Sender);
         void __fastcall Image9Click(TObject *Sender);
-        //funkcja podœwietlaj¹ca przycisk po najechaniu
+        //funkcja podswietlajaca przycisk po najechaniu
         void __fastcall Label8MouseMove(TObject *Sender, TShiftState Shift,
           int X, int Y);
-        //funkcja przywracaj¹ca w³aœciwoœci przycisku
+        //funkcja przywracajaca wlasciwosci przycisku
         void __fastcall Label8MouseLeave(TObject *Sender); 
         void __fastcall Label11Click(TObject *Sender);
         void __fastcall Label11MouseLeave(TObject *Sender);

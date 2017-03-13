@@ -15,7 +15,7 @@ TForm1 *Form1;
 __fastcall TForm1::TForm1(TComponent* Owner)
         : TForm(Owner)
 { 
-gracz1="Player1";  //ustawiamy domyœlne nazwy u¿ytkowników
+gracz1="Player1";  //ustawiamy domyslne nazwy uzytkownikow
 gracz2="Player2";
 }
 //---------------------------------------------------------------------------

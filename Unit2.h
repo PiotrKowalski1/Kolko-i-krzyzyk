@@ -16,13 +16,13 @@ class TForm2 : public TForm
 __published:	// IDE-managed Components
         TLabel *Label1;  //napis wyswietlajacy nazwe gracza 1
         TLabel *Label2;  //napis "remis"
-        TLabel *Label3;  //napis wyœwietlajacy nazwe gracza 2
+        TLabel *Label3;  //napis wyswietlajacy nazwe gracza 2
         TLabel *Label4;  //napis zegara,pokazujacy czas
         TLabel *Label5;  //napis wyswietlajacy ilosc punktów gracza 1
         TLabel *Label6;  //napis wyswietlajacy ilosc remisów
         TLabel *Label7;  //napis wyswietlajacy ilosc punktów gracza 2
         TLabel *Label9;  //napis "tura gracza",nad obrazem tura
-        TLabel *Label10; //napis wyœwietlaj¹cy nazwê gracza, który wygral
+        TLabel *Label10; //napis wyswietlajacy nazwe gracza, który wygral
         
         TLabel *Label8;  //przycisk pozwalajacy rozpoczac nowa rozgrywke
         TLabel *Label11; //przycisk pozwalajacy na powrót do menu
@@ -49,7 +49,7 @@ __published:	// IDE-managed Components
         void __fastcall FormCreate(TObject *Sender);
         //funkcja odmierzajaca czas
         void __fastcall Timer1Timer(TObject *Sender);
-        //funkcje wstawiajace obraz kólka i krzyzyka po klikniêciu w pole
+        //funkcje wstawiajace obraz kólka i krzyzyka po kliknieciu w pole
         void __fastcall Image1Click(TObject *Sender); 
         void __fastcall Image2Click(TObject *Sender);
         void __fastcall Image3Click(TObject *Sender); 
